@@ -25,11 +25,11 @@ function contact(event) {
 
 let isModalOpen = false;
 function toggleModal() {
-    console.log('toggleModal()')
     if (isModalOpen) {
+        isModalOpen = false;
         return document.body.classList.remove("modal--open")
     }
    
-      isModalOpen = !isModalOpen;
+      isModalOpen = true;
     document.body.classList += " modal--open";
 }
