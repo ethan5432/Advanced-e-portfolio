@@ -20,7 +20,7 @@
 </script>
   </head>
   <body class="">
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img
@@ -34,12 +34,13 @@
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >About</a
+             onclick="toggleModal()" >
+             About</a
             >
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
@@ -91,7 +92,8 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click" onclick="toggleModal()"><i class="fas fa-envelope"></i></button>
+      <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()"><i class="fas fa-envelope"></i></button></a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div
       ></a>
@@ -172,6 +174,15 @@
         </div>
         
       </div>
+      <img src="D:\Users\ethan\Downloads\Tutorial Exclusive Eportfolio\Tutorial Exclusive Eportfolio\assets\semi circle.svg" class="shape shape--0">
+      <img src="D:\Users\ethan\Downloads\Tutorial Exclusive Eportfolio\Tutorial Exclusive Eportfolio\assets\circle.svg" class="shape shape--1">
+      <img src="D:\Users\ethan\Downloads\Tutorial Exclusive Eportfolio\Tutorial Exclusive Eportfolio\assets\squiggly.svg" class="shape shape--2">
+      <img src="D:\Users\ethan\Downloads\Tutorial Exclusive Eportfolio\Tutorial Exclusive Eportfolio\assets\circle.svg" class="shape shape--3">
+      <img src="D:\Users\ethan\Downloads\Tutorial Exclusive Eportfolio\Tutorial Exclusive Eportfolio\assets\triangle.svg" class="shape shape--4">
+      <img src="D:\Users\ethan\Downloads\Tutorial Exclusive Eportfolio\Tutorial Exclusive Eportfolio\assets\circle.svg" class="shape shape--5">
+      <img src="D:\Users\ethan\Downloads\Tutorial Exclusive Eportfolio\Tutorial Exclusive Eportfolio\assets\squiggly.svg" class="shape shape--6">
+      <img src="D:\Users\ethan\Downloads\Tutorial Exclusive Eportfolio\Tutorial Exclusive Eportfolio\assets\circle.svg" class="shape shape--7">
+      <img src="D:\Users\ethan\Downloads\Tutorial Exclusive Eportfolio\Tutorial Exclusive Eportfolio\assets\semi circle.svg" class="shape shape--8">
     </section>
     <section id="projects">
       <div class="container">
@@ -294,25 +305,25 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href=""
+              href="https://github.com/ethan5432"
               class="footer__social--link 
               link__hover-effect 
               link__hover-effect--white"
               >GitHub</a
             >
             <a
-              href=""
+              href="https://www.linkedin.com/in/ethan-nirenberg-7637b81bb/" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >LinkedIn</a
             >
             <a
-              href="#"
+              href="#" 
               class="footer__social--link link__hover-effect link__hover-effect--white"
               onclick="toggleModal()"
               >Contact</a
             >
             <a
-              href=""
+              href="" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >Resume</a
             >
