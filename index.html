@@ -19,7 +19,7 @@
    })();
 </script>
   </head>
-  <body class="modal--open modal">
+  <body class="">
     <section id="landing-page">
       <nav>
         <figure>
@@ -44,7 +44,7 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -63,12 +63,12 @@
       <header class="header">
         <div class="header__content">
           <h1 class="title">Hey</h1>
-          <h1 class="title blue">I'm Ethan</h1>
+          <h1 class="title blue">I'm Ethan.</h1>
           <p class="header__para">
             I'm a <b class="blue">Software Engineer</b> with a passion for
             building web applications with great user experiences.
             <br />
-            Here's a bit more <b class="blue">about me</b>.
+            Here's a bit more <b class="blue click" onclick="toggleModal()">about me</b>.
           </p>
           <div class="social__list">
             <a
@@ -140,6 +140,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Lets chat!
           </h3>
@@ -169,7 +170,7 @@
           </div>
 
         </div>
-        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        
       </div>
     </section>
     <section id="projects">
@@ -305,8 +306,9 @@
               >LinkedIn</a
             >
             <a
-              href=""
+              href="#"
               class="footer__social--link link__hover-effect link__hover-effect--white"
+              onclick="toggleModal()"
               >Contact</a
             >
             <a

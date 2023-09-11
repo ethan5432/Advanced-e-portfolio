@@ -129,9 +129,27 @@ textarea:focus {
   width: 100%;
 }
 
+nav,
+.scroll,
+.header {
+  opacity: 1;
+  visibility: visible;
+  transition: all 600ms 800ms;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms 200ms;
+}
+
+
 /*
  LANDING PAGE
 */
+
 #landing-page {
   min-height: 100vh;
 }
@@ -275,6 +293,8 @@ MODAL
   overflow: hidden;
   display: flex;
   visibility: hidden;
+  z-index: -1;
+  transition: visibility 1s, z-index 1s, box-shadow 0,5s ease;
 }
 
 .modal--open .modal {
@@ -290,10 +310,19 @@ MODAL
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition: all 300ms ease-in;
+}
+
+.modal--open .modal__about,
+.modal--open .modal__contact
+{
+  background-color: rgb(245, 245, 245);
+  transform: translateX(0%);
 }
 
 .modal__about {
   background-color: rgb(245, 245, 245);
+  transform: translateX(-110%);
 }
 
 .modal__languages {
@@ -330,6 +359,7 @@ MODAL
 .modal__contact {
   background-color: #242424;
   color: white;
+  transform: translateX(110%);
 }
 
 .modal__title {
@@ -378,7 +408,7 @@ MODAL
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -408,6 +438,7 @@ MODAL
 
 .modal__overlay--visible {
   z-index: 1;
+  display: flex;
 }
 
 .fa-spinner {
