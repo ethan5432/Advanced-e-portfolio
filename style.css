@@ -366,7 +366,6 @@ MODAL
 
 .modal__languages {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 
